@@ -1,0 +1,6 @@
+num_english_subscribers= int(input())
+student_english_susbcribers = set(map(int, input().split()))
+num_french_subscribers = int(input())
+student_french_subscribers = set(map(int, input().split()))
+u = student_english_susbcribers.symmetric_difference(student_french_subscribers) 
+print(len(u))
